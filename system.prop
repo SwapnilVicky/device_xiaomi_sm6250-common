@@ -44,6 +44,9 @@ vendor.display.enable_default_color_mode=0
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # DPM
 persist.dpm.feature=1
 
