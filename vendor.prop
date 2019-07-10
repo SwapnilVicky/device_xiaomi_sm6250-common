@@ -173,6 +173,7 @@ ro.hardware.keystore_desede=true
 
 # Media
 drm.service.enabled=true
+debug.stagefright.c2inputsurface=-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Netflix
