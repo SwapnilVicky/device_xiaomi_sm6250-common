@@ -60,6 +60,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/camera/camxoverridesettings.txt)
+            sed -i "s/0x10082/0/g" "${2}"
+            sed -i "s/0x1F/0x0/g" "${2}"
+            ;;
         vendor/lib64/camera/components/com.qti.node.watermark.so)
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
