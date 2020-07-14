@@ -71,6 +71,9 @@ media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.mm.enable.qcom_parser=131071983
 
+# Navbar - gestural
+ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
 # Netflix
 ro.netflix.bsp_rev=Q6250-19132-1
 
