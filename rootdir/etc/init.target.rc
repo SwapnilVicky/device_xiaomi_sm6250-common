@@ -734,3 +734,9 @@ service audioshell_service /vendor/bin/audioshell_service
 on property:ro.vendor.miui.region=*
     start audioshell_service
 #2019.11.25 longcheer puqirui add for misound MIUI patch end
+
+# Hide Magisk
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
