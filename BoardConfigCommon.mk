@@ -56,6 +56,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
