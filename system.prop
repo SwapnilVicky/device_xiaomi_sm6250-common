@@ -22,6 +22,9 @@ persist.vendor.cne.feature=1
 # Dalvik
 dalvik.vm.dexopt.secondary=true
 
+# Disable rescue party sometimes is fucked and the rom wants clean shit
+persist.device_config.configuration.disable_rescue_party=true
+
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
