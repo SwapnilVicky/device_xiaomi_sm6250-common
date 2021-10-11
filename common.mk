@@ -87,6 +87,7 @@ PRODUCT_PACKAGES += \
     BluetoothQti
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1.vendor
     android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
@@ -141,6 +142,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey
 
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -176,6 +180,15 @@ PRODUCT_COPY_FILES += \
 # Graphics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -239,6 +252,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
 # Libshims
 PRODUCT_PACKAGES += \
     fakelogprint
@@ -282,6 +299,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
+
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
+
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Network
 PRODUCT_COPY_FILES += \
@@ -337,6 +362,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson \
     librmnetctl
+
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
