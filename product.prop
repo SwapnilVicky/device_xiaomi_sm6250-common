@@ -34,6 +34,7 @@ ro.build.shutdown_timeout=2
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Transcoding related property.
 debug.media.transcoding.codec_max_operating_rate_720P=240
