@@ -167,9 +167,6 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
-# Keyguard
-keyguard.no_require_sim=true
-
 # Keystore
 ro.hardware.keystore_desede=true
 
@@ -187,9 +184,6 @@ vendor.power.pasr.enabled=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-
-# Priv-app permissions
-ro.control_privapp_permissions=log
 
 # Radio
 persist.radio.multisim.config=dsds
