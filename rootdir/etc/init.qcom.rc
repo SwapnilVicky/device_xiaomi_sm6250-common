@@ -937,3 +937,6 @@ on property:sys.boot_completed=1
 on boot
    # Enable suspend to idle mode to reduce latency during suspend/resume
     write /sys/power/mem_sleep "s2idle"    
+
+# Enable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1    
