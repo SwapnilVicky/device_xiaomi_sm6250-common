@@ -56,6 +56,9 @@ on init
 # set default schedTune value for camera-daemon
     write /dev/stune/camera-daemon/schedtune.prefer_idle 1
     write /dev/stune/camera-daemon/schedtune.boost 0
+    
+    # Disable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
 
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
