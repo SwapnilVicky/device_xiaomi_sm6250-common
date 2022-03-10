@@ -83,7 +83,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_ADDITIONAL_FLAGS += AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump
-TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton
 TARGET_KERNEL_CONFIG := cust_defconfig
