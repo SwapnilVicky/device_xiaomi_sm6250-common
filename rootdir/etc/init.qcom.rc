@@ -568,6 +568,12 @@ service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
     disabled
     oneshot
 
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
 service wifi_ftmd /system/vendor/bin/wifi_ftmd
     user system
     group system inet net_admin
