@@ -16,5 +16,11 @@
     "target_path":"external/exfat",
     "branch":"11",
     "remote":"github"
+  },
+  {
+    "remote": "github",
+    "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "branch": "master"
   }
 ]
