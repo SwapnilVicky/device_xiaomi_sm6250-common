@@ -77,7 +77,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.lcd.cabc_mode=1
 
 # FM
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio \
