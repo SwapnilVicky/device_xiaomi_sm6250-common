@@ -59,9 +59,6 @@
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">224</integer>
 
-    <!-- Whether device has a notch -->
-    <bool name="config_haveNotch">true</bool>
-
     <!-- Defines the actions shown in advanced reboot submenu -->
     <string-array name="config_restartActionsList">
         <item>restart</item>
