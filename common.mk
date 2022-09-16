@@ -91,11 +91,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-V1-ndk.vendor \
-    libcamera2ndk_vendor \
-    libdng_sdk.vendor \
-    libgui_vendor \
-    libpiex_shim \
-    libstdc++_vendor
+    libpiex_shim 
 
 # Camera (Megvii)
 PRODUCT_PACKAGES += \
