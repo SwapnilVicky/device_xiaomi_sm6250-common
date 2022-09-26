@@ -13,6 +13,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/sm6250-common/sm6250-common-vend
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
