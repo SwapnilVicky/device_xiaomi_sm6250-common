@@ -61,7 +61,7 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/lib64/camera/components/com.qti.node.watermark.so)
-            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc)
             sed -i "s/4\.0/4\.1/g" "${2}"
