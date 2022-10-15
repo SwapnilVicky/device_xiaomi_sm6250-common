@@ -681,3 +681,20 @@ chown system system /sys/class/power_supply/battery/charging_enabled
 chmod 0666 /sys/class/power_supply/battery/charging_enabled
 chown system system /sys/class/power_supply/battery/input_suspend
 chmod 0666 /sys/class/power_supply/battery/input_suspend
+
+# Include logger service
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on post-fs-data
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop logger
