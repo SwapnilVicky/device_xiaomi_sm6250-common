@@ -113,6 +113,9 @@ BOARD_KERNEL_CMDLINE += kpti=off
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_xiaomi_sm6250
 TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_sm6250
