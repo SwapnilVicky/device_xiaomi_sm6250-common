@@ -338,6 +338,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
