@@ -41,6 +41,7 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.bluetooth.soc=cherokee
 
 # Camera
+ro.miui.notch=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera
 persist.vendor.camera.privapp.list=com.android.camera
 
