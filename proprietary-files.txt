@@ -1181,9 +1181,6 @@ vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 
 # Time services
-vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # Touchscreen firmware

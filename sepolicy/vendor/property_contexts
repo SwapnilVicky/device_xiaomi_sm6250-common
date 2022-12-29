@@ -15,3 +15,6 @@ vendor.powerhal.audio                   u:object_r:vendor_power_prop:s0
 vendor.powerhal.lpm                     u:object_r:vendor_power_prop:s0
 vendor.powerhal.init                    u:object_r:vendor_power_prop:s0
 vendor.powerhal.rendering               u:object_r:vendor_power_prop:s0
+
+# Time
+persist.vendor.timeadjust               u:object_r:vendor_timekeep_prop:s0
