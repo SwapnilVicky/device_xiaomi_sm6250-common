@@ -147,6 +147,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 persist.sys.sf.color_saturation=1.0
+debug.sf.enable_transaction_tracing=false
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
