@@ -786,4 +786,7 @@
     <!-- Enable video pause workaround when enabling/disabling the camera. -->
     <bool name="config_useVideoPauseWorkaround">true</bool>
 
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
+
 </resources>
