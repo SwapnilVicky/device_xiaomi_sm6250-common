@@ -509,6 +509,9 @@ on property:vendor.media.target_variant=*
 on property:vold.decrypt=trigger_restart_framework
     start wcnss-service
 
+    # Start perf
+    setprop vendor.post_boot.parsed 1
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
