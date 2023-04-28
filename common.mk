@@ -295,6 +295,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
 
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/miuicamera/MiuiCamera.mk)
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \

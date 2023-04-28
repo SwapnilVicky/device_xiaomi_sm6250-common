@@ -4,3 +4,6 @@ allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
 
 allow system_server app_zygote:process { getpgid };
+
+allow system_server hal_camera_default:binder { call transfer };
+allow system_server hal_camera_default:fd *;
