@@ -483,3 +483,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
