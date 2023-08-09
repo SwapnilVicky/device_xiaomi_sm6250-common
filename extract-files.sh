@@ -70,6 +70,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc)
             sed -i "s/4\.0/4\.1/g" "${2}"
             ;;
+        vendor/lib64/hw/fingerprint.fpc.default.so)
+        # NOP out report_input_event()
+         "${SIGSCAN}" -p "30 00 00 90 11 3a 42 f9" -P "30 00 00 90 1f 20 03 d5" -f "${2}"
+            ;;
     esac
 }
 
