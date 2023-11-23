@@ -35,3 +35,7 @@ if [ "$boot_reason" = "3" ] || [ "$reboot_reason" = "true" ]; then
 else
     setprop ro.vendor.alarm_boot false
 fi
+
+# Workaround for cache
+rm -rR /data/resource-cache
+rm -rR /data/system/package_cache
