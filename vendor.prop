@@ -212,8 +212,5 @@ persist.vendor.sensors.allow_non_default_discovery=true
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7125
 
-# WFD
-persist.sys.wfd.virtual=0
-
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
