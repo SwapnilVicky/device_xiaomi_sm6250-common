@@ -111,7 +111,6 @@ function configure_memory_parameters() {
     echo 3000 > /proc/sys/vm/dirty_expire_centisecs
     echo 10 > /proc/sys/vm/dirty_background_ratio
 
-    configure_read_ahead_kb_values
 }
 
 #Apply settings for atoll
