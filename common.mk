@@ -73,17 +73,9 @@ PRODUCT_PACKAGES += \
     qcom.fmradio \
     qcom.fmradio.xml
 
-# AVB
-PRODUCT_PACKAGES += \
-    q-gsi.avbpubkey \
-    r-gsi.avbpubkey \
-    s-gsi.avbpubkey
-
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    libbthost_if \
-    BluetoothQti
+    audio.bluetooth.default 
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
@@ -129,7 +121,6 @@ PRODUCT_PACKAGES += \
     memtrack.atoll
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
