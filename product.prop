@@ -21,6 +21,9 @@ vendor.display.disable_layer_stitch=0
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_rotator_downscale=1
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=true
