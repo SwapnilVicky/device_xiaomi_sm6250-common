@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Inherit MiuiCamera if exists
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
+
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/sm6250-common/sm6250-common-vendor.mk)
 
