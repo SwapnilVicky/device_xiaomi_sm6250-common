@@ -65,6 +65,7 @@ ro.surface_flinger.has_wide_color_display=false
 ro.vendor.display.cabl=0
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
+vendor.display.enable_default_color_mode=0
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
