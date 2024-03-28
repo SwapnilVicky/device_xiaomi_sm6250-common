@@ -90,13 +90,17 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider-V1-ndk.vendor \
+    libcamera2ndk_vendor \
+    libdng_sdk.vendor \
     libgui_vendor \
-    libpiex_shim
+    libpiex_shim \
+    libstdc++_vendor
 
+# Camera (Megvii)
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    libMegviiFacepp-0.5.2 \
+    libmegface
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
