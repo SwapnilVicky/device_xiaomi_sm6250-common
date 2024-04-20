@@ -20,10 +20,6 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/lib/libfastcvdsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libfastcvdsp_stub.so
@@ -140,6 +136,7 @@ vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 # Audio HAL
 vendor/lib/hw/audio.primary.atoll.so
 vendor/lib64/hw/audio.primary.atoll.so
+vendor/lib64/hw/sound_trigger.primary.atoll.so
 
 # Battery
 vendor/bin/batterysecret
@@ -760,7 +757,6 @@ system_ext/lib64/vendor.qti.ims.callcapability@1.0.so
 system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
 system_ext/lib64/vendor.qti.ims.factory@1.0.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
