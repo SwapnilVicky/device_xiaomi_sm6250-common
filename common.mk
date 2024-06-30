@@ -309,6 +309,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     MiatollCarrierConfigOverlay \
+    MiatollDeviceAsWebcam \
     MiatollFrameworks \
     MiatollSettingsOverlay \
     MiatollSystemUI \
