@@ -48,8 +48,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
         .regex_replace('0x10082', '0')
         .regex_replace('0x1F', '0x0'),
-    'vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc': blob_fixup()
-        .regex_replace('@4.0', '@4.1'),
     'vendor/lib64/camera/components/com.qti.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
     'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
