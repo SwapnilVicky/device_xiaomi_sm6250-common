@@ -1,6 +1,5 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
 # mojito: V14.0.9.0.SKGMIXM (MOJITOGlobal)
-# sunstone: OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
 # ACDB
@@ -420,7 +419,7 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# DPM (system) - from sunstone
+# DPM (system) - from sunstone OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
@@ -1020,36 +1019,37 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 # WiFi
 vendor/bin/cnss-daemon
 
-# WiFi Display (system) - from sunstone
-system/framework/WfdCommon.jar;BOOT_JAR|08bf9850ac45396fe753e208c4d63ec43389dce2
-system_ext/bin/wfdservice64|77de5e319297d09b29712160ed0a9dbdced58911
-system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c|3dfd29a44f37c971b7707b6e47b2b601a9119d12
-system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|10dcd4e58f0652d800d48ae5b76e4fab43fda214
+# WiFi Display (system) - from dada OS3.0.5.0.WOCMIXM
+system/framework/WfdCommon.jar;BOOT_JAR|5c834d8af38bb6aca3cf6d68337261426c1977a8
+system_ext/bin/wfdservice64:system_ext/bin/wfdservice|589621520da356f6724dbe17c5f1209ef1fc7490
+system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
+system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|6669d5ee462c981663b8ac573d84d334e4eed96c
 system_ext/etc/seccomp_policy/wfdservice64.policy|1e331272649395423b11c575892e0bdc9433b820
-system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
-system_ext/lib64/libmmosal.so|a1a2875522a7b4daf346bf26c66bcbc793c8810b
-system_ext/lib64/libmmparser_lite.so|afd7b441e1bce732c14f5f8f49821d43bb2ee791
-system_ext/lib64/libmmrtpdecoder.so|0da526d51135ea58236ab6bcc2d1b7484931df24
-system_ext/lib64/libmmrtpencoder.so|fafe00d1ed3d691c6d2c2d963144218764cad5ae
-system_ext/lib64/libwfdavenhancements.so|9c763b45dd5fe7c52fad420a21d215b31c5e34d5
-system_ext/lib64/libwfdclient.so|0070b1e88cee6ebaf17dcb02c2706232cc087071
-system_ext/lib64/libwfdcommonutils.so|14b3bd86703f2aca0abb1232d2304e626c1af644
-system_ext/lib64/libwfdconfigutils.so|ce60fa01bfb684bb8d993f57edb7854c86fa6003
-system_ext/lib64/libwfddisplayconfig.so|5fd7bf7abaedfe890442f88183c49755b25c39aa
-system_ext/lib64/libwfdmminterface.so|3f16acefbe87741a5841c1c70cf74ff917299c4c
-system_ext/lib64/libwfdmmsink.so|8150b750357b606475521b491f78d566673f9888
-system_ext/lib64/libwfdmmsrc_system.so|549dc8ea93308bf2a5e3c32eaca3677e436ac62f|12efaad1a3614fe13969ebf4e15d1b405b11a0a5
-system_ext/lib64/libwfdnative.so|fd5284de5f87e838e751eb5530a4b4e26c3f3de1|46502f605a405b92fa6e6a440dfffc1e8ddd89ac
-system_ext/lib64/libwfdrtsp.so|8181e44d7c1f722218fabd8fe3bf788454a3f586
-system_ext/lib64/libwfdservice.so|a993e338de3e06733186f69f91486520599a727c|f4de65898c6e495f0be49212ac90ab20515b69c9
-system_ext/lib64/libwfdsinksm.so|c4d68ecbe0accd24296c18444e5a82b6a24be8d8
-system_ext/lib64/libwfduibcinterface.so|dca32fe063bdba7ce3b131b16cf112b793ae03ad
-system_ext/lib64/libwfduibcsink.so|63ea93b1a6aec75a294baf50007270807a819e21
-system_ext/lib64/libwfduibcsinkinterface.so|39c123bd9a4d7a8fa317f8ed4d86972dcfab0423
-system_ext/lib64/libwfduibcsrc.so|5557f3bd58c37b7e3b28e13f2f86d55930b14ab6
-system_ext/lib64/libwfduibcsrcinterface.so|77cead9bf7b60384fe1e11dc2b25bd99af0b4608
-system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|67a10e8e42fd0cfc0a0a3246a4740e4ed37b3506
-system_ext/priv-app/WfdService/WfdService.apk|98d9439124144085c5956038e87a0e12356a633f
+system_ext/etc/wfdconfigsink.xml|d718bc1ccb3e6e52a0af7bf4de62445c0b083651
+system_ext/lib64/libmmosal.so|9e67e6fb7e29c9b05bbd6259058c0d8474a290ae
+system_ext/lib64/libmmparser_lite.so|ef94ae07ad3a8484540a55d6aad9dd7b3bd4b060
+system_ext/lib64/libmmrtpdecoder.so|5324c851a20cecae3de825e3f438e3bbfe780ca5
+system_ext/lib64/libmmrtpencoder.so|4653d181f1808c1ca67675f55a81ec2cdb1b27c3
+system_ext/lib64/libwfdavenhancements.so|23b59faef6d423157e0948405ab2fda3c8d6a006
+system_ext/lib64/libwfdclient.so|bfd05e0b5306f6f3c734e4218ef2f0d9364bf6e2
+system_ext/lib64/libwfdcommonutils.so|c4b22b8dddb7e898f072d514a1287ebab43d7fb3
+system_ext/lib64/libwfdconfigutils.so|aa86af82a0075f84989b93a2d585c2f66ae115e0
+system_ext/lib64/libwfddisplayconfig.so|6d5ed77a65d765e48a23f3519c6c7a5005945086
+system_ext/lib64/libwfdmminterface.so|cc61087a298aff53c32832cac5256606e202ce29
+system_ext/lib64/libwfdmmsink.so|122c1e66fc0e922dadb138be865c07dc2a28cd63
+system_ext/lib64/libwfdmmsrc_system.so|9910d4c2d3b8bdbdaebcaca8c601be3e6746112d
+system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|25e2662782de919ff6aac8f9deac49b763b9fc43|0d5cd034d5b8c828e6668fa33fc8b063d6ad08d9
+system_ext/lib64/libwfdrtsp.so|bd7e26557b753214be53c233c3e2deac062c269c
+system_ext/lib64/libwfdservice.so|27dddd3ba79fef78b9cfa50b624a26e452356eb4
+system_ext/lib64/libwfdsinksm.so|0ad7086e7231b43db55bed59a44bd9dab5385b51
+system_ext/lib64/libwfduibcinterface.so|de8ae1660abbd14a6df278ae3e0e56296cefea19
+system_ext/lib64/libwfduibcsink.so|2f6debd17ed86e0fc73502b6318f5704dec8c4fa
+system_ext/lib64/libwfduibcsinkinterface.so|70fa6a4228df4a849220c6f375078d689dedcd76
+system_ext/lib64/libwfduibcsrc.so|d4c86e85be9622eca5cb5e095c6ec935e5c7d86a
+system_ext/lib64/libwfduibcsrcinterface.so|587457b2a5f33f996966f2d35ec4af421a6ea6df
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|2b2563450ad6a8d46d5648b97f63f87c5d9983ca
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so|58cd9358df40aa16ddf0e603b736c58588623b9e
+system_ext/priv-app/WfdService/WfdService.apk|ccc5d2c44b6368bac49726a15283b69f7a20af40
 
 # WiFi Display (vendor)
 vendor/bin/wfdhdcphalservice
