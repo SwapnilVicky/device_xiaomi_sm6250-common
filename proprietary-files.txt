@@ -80,9 +80,17 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 
-# Audio FX modules
+# Audio (FX Modules)
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
+
+# Audio (FX Modules) - from vili OS1.0.27.0.UKDEUXM
+vendor/lib/soundfx/libqcbassboost.so|5364c3b30ce12fcf81d49c70e61a6cb0a85aa169
+vendor/lib/soundfx/libqcreverb.so|eb1ed44229b9ad5dacaf0a377123300401f96839
+vendor/lib/soundfx/libqcvirt.so|413dd37a616bb5ee66b0a2a302a5064529c18d00
+vendor/lib64/soundfx/libqcbassboost.so|15c134881a4820c8ce034079c427a2a553e57678
+vendor/lib64/soundfx/libqcreverb.so|8cc38013470e0bb109c2dc80c9091cf2fdeac98a
+vendor/lib64/soundfx/libqcvirt.so|b18d59490fbd72cf8fd927995b51a0224edd038c
 
 # Battery
 vendor/bin/batterysecret
