@@ -88,6 +88,9 @@ BOARD_KERNEL_CMDLINE += swiotlb=1
 # Media
 TARGET_USES_ION := true
 
+# Miui Camera 
+-include vendor/xiaomi/miuicamera/BoardConfigMiuiCamera.mk
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
