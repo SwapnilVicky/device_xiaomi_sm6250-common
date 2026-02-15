@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "SM6250SettingsOverlay",
+    resource_dirs: ["res"],
+    product_specific: true,
+}

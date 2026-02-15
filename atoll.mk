@@ -167,6 +167,7 @@ PRODUCT_PACKAGES += \
     NcmTetheringOverlay \
     SM6250DeviceAsWebcam \
     SM6250Frameworks \
+    SM6250SettingsOverlay \
     SM6250SystemUI \
     TelephonyResCommon \
     WifiOverlay
