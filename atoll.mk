@@ -72,7 +72,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display
 
 PRODUCT_PACKAGES += \
-    disable_configstore \
     gralloc.qcom \
     hwcomposer.qcom \
     vendor.qti.hardware.display.allocator-service \
